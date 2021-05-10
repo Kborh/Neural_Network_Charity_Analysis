@@ -9,9 +9,9 @@ organization called Alphabet Soup will be successful. For this analysis we had a
 measures on 34,000 organizations that have been funded by Alphabet Soup. This project compromised of the 
 following 3 steps:
 
-  .Preprocessing the data for the neural network
-  .Compile, Train and Evaluate the Model
-  .Optimizing the model
+  . Preprocessing the data for the neural network
+  . Compile, Train and Evaluate the Model
+  . Optimizing the model
 
 ## Results
 
