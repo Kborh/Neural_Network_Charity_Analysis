@@ -19,7 +19,7 @@ following 3 steps:
 
     .Variable that was considered as the target for my model: IS_SUCCESSFUL Column
     .Variables that were considered features for my model: Every Column except for IS_SUCCESSFUL 
-     which is our target and the ones we will drop
+     which is the target and the ones we will drop
     .Variable that were neither targets or features for the dataset: 
      Columns that I dropeed are EIN, NAME because they will have little to no impact om our outcome
 
@@ -30,17 +30,33 @@ The number of neurons, layers, and activation functions that i use for my neuron
 
   . For my neuronal network model had 2 hidden layers. The first layer had 80 neurons, and the second has 30,
     there is also an output layer. The first and second layers have the reul activation function and the activtion
-    function for the output layer is sigmoid.
+    function for the output layer is sigmoid as illustrated by the image in the images foldere.
     
 Was the model able to achieve the target model performance?
   
-  . The model was not able to reach the target 75%. The accuracy for the model was 68%.
+  . The model was not able to reach the target 75%. The accuracy for the model was 73% as shown in the images folder.
   
   
 Steps taken to try and increase model performance
-  . step 1: Remove addiditonal feature that is the USE_CASE olumn.
+  . step 1: Removed addiditonal feature that is the STATUS column.
   
   
   
-  . Step 2: Added additional neurons to the hidden layers. As a result of the added layer, the accuracy score 
-          ``went down, this time to 50%.
+  . Step 2: Added additional neurons to the hidden layers to the network model. 
+     I also changed the values of the layers to see if there would be a n imporovement in the accuracy score.
+     An image of the added feature can be found in the images folder.
+     
+     The Accuracy score didn't reached 75% after the added neuron, there wasn't any changed to the accuracy score 73%. 
+     An image of the day outcome is in the images folder.
+     
+ . Step 3: I changed the activation function of the output layer to 'tanh', but that didn't changed the accuracy sroce.
+    the accuracy score stayed at 73%. Images of these results can be found in the images folder.
+    
+    
+## Summery
+      The model ended up with the accuracy score of 73%% after optimization. The initial neural network had an accuracy score of 73% as well. 
+      This loss in accuracy can be explained from the fact that the model overfitted. Furthermore, we could further also optimize 
+      our neural network by removing more features or simply adding more data to the dataset to increase accuracy. Since our accuracy 
+      score was not particularly up to the standard with neural networks, we could have used the Random Forest classifiers. This is 
+      because random forest is a robust and accurate model due to their sufficient number of estimators and tree depth. Also the
+      random forest models have a faster performance than neural networks and could have avoided the data from being overfitted.
